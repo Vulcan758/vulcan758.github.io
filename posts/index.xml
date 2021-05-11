@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Vulcans Forge</title>
+    <link>https://vulcans-forge.github.io/posts/</link>
+    <description>Recent content in Posts on Vulcans Forge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 May 2021 06:21:48 +0600</lastBuildDate><atom:link href="https://vulcans-forge.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First post</title>
+      <link>https://vulcans-forge.github.io/2021/firstpost/</link>
+      <pubDate>Tue, 11 May 2021 06:21:48 +0600</pubDate>
+      
+      <guid>https://vulcans-forge.github.io/2021/firstpost/</guid>
+      <description>THIS IS CONTENT
+&#39;&#39;&#39; python for i in range(69): print(&amp;lsquo;your mom is so fat&amp;rsquo;) &#39;&#39;&#39;</description>
+    </item>
+    
+  </channel>
+</rss>
