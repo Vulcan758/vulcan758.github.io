@@ -1,234 +1,210 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.83.1" />
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noodp"/>
-  
-  
-  
-  
-  
-  
-  
-  <link rel="canonical" href="https://vulcans-forge.github.io/" />
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>
-       
-       
-           Vulcans Forge
-       
-  </title>
-  <meta name="title" content="Vulcans Forge">
-    
-  
-  <link rel="stylesheet" href="/font/iconfont.css">
-  <link rel="stylesheet" href="/css/main.min.css">
-
-
-  
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Vulcans Forge">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Vulcans Forge">
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Vulcans Forge"/>
-<meta name="twitter:description" content=""/>
-
-  <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "url": "https:\/\/vulcans-forge.github.io\/",
-  "author": {
-    "@type": "Person",
-    "name": "Al Mahir Ahmed (Vulcan758)"
-  },
-  
-  "image": "https:\/\/vulcans-forge.github.io\/cover.png",
-  "thumbnailUrl": "https:\/\/vulcans-forge.github.io\/logo.png",
-  
-  "name": "Vulcans Forge"
-}
-</script>
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Al Mahir Ahmed — Robotics Engineer</title>
+  <meta name="description" content="Al Mahir Ahmed — robotics engineer working on autonomous navigation, sampling-based path planning, state estimation and embedded systems. Toronto, Canada.">
+  <meta property="og:title" content="Al Mahir Ahmed — Robotics Engineer">
+  <meta property="og:description" content="Autonomous navigation, path planning, SLAM and embedded systems. Former Team Lead, BRACU Mongol-Tori Mars rover.">
+  <meta property="og:url" content="https://vulcan758.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0f14'/><circle cx='8' cy='24' r='3' fill='%2338bdf8'/><circle cx='24' cy='8' r='3' fill='%23f59e0b'/><path d='M8 24 L14 17 L13 11 M14 17 L20 14 L24 8' stroke='%2338bdf8' stroke-width='1.6' fill='none'/></svg>">
 </head>
-
-  
-
-
-
-  <body class="">
-    <div class="wrapper">
-        
-<nav class="navbar">
-    <div class="container">
-        <div class="navbar-header header-logo">
-        	<a href="https://vulcans-forge.github.io/" style="font-weight: bold; font-size: larger; letter-spacing:0.050em; padding-left: 0.75cm;">> Vulcans Forge<span id="cursor">_</span></a>
-        </div>
-        <div class="menu navbar-right">
-                
-                
-                <a class="menu-item" href="/posts/" title="">Creations</a>
-                
-                <a class="menu-item" href="/test" title="">WASSAP</a>
-                
-                <a class="menu-item" href="/categories/" title="">Categories</a>
-                
-                <a class="menu-item" href="/about" title="">$whoami</a>
-                
-                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;
-        </div>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">am<span>.ahmed</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-</nav>
-<nav class="navbar-mobile" id="nav-mobile" style="display: none">
-     <div class="container">
-        <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="https://vulcans-forge.github.io/">Vulcans Forge</a></div>
-            <div class="menu-toggle">
-                <span></span><span></span><span></span>
-            </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <canvas id="rrt" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <p class="kicker">Robotics Engineer · Toronto, Canada</p>
+        <h1>Al Mahir Ahmed</h1>
+        <p class="lede">I build autonomy for robots that leave the lab — sampling-based path planning,
+          state estimation and SLAM, down through the firmware and PCBs underneath.
+          Four years on a Mars rover team, from junior engineer to team lead.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn" href="mailto:mahirgored@gmail.com">Get in touch</a>
         </div>
-     
-          <div class="menu" id="mobile-menu">
-                
-                
-                <a class="menu-item" href="/posts/" title="">Creations</a>
-                
-                <a class="menu-item" href="/test" title="">WASSAP</a>
-                
-                <a class="menu-item" href="/categories/" title="">Categories</a>
-                
-                <a class="menu-item" href="/about" title="">$whoami</a>
-                
+        <p class="hint">The tree behind this text is a live RRT searching for a path. Click to move the goal.</p>
+      </div>
+    </section>
+
+    <section id="about" class="wrap section">
+      <h2><span class="num">01</span>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I graduated with a B.Sc. in Applied Physics and Electronics from BRAC University (2026),
+            where my thesis on fast sampling-based motion planning became a conference submission.
+            Most of what I know I learned building <strong>BRACU Mongol-Tori</strong>, a Mars rover
+            prototype for the University Rover Challenge — I wrote its autonomous navigation stack
+            from scratch, then led the 30+ person team.</p>
+          <p>I'm happiest owning a system end to end: reading a planning paper, implementing it,
+            and seeing it run on hardware I helped design. Right now I'm working on SLAM for
+            GNSS-denied navigation.</p>
+          <p>I'm looking for my first industry role in robotics autonomy — field and delivery robots,
+            space robotics, defense autonomy, or assistive robotics. Remote or Toronto/GTA, open to relocation.</p>
         </div>
-    </div>
-</nav>
+        <ul class="facts">
+          <li><span>Focus</span>Path planning · Navigation · State estimation · SLAM</li>
+          <li><span>Stack</span>C++ · Python · ROS/ROS 2 · Nav2 · Gazebo · OpenCV · Docker</li>
+          <li><span>Hardware</span>ESP32 · STM32 · microROS · ESP-IDF · KiCAD (4-layer)</li>
+          <li><span>Languages</span>English · Bengali · Arabic (reading)</li>
+        </ul>
+      </div>
+    </section>
 
-    	 <main class="main">
-          <div class="container">
-      		
-
-<div class="intro">
-    
-    
-    
-   <div class="avatar">
-        <a href="/posts/"> <img src="/images/me/avatar.jpeg"> </a>
-    </div>
-    
-    
-    
-    <h2 class="description">
-       I&#39;m a pretty dopeass dude.
-    </h2>
-    
-    <div class="social-links">
-      
-<a href="https://github.com/Vulcans-Forge" target="_blank" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-github"></i></a>
-
-
-<a href="https://linkedin.com/in/in/al-mahir-ahmed" target="_blank" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-linkedin"></i></a>
-
-
-
-<a href="https://www.instagram.com/vulcans_forge_/" target="_blank" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-instagram"></i></a> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    </div>
-</div>
-
-
+    <section id="experience" class="wrap section">
+      <h2><span class="num">02</span>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">2023 – 2025</div>
+          <div>
+            <h3>Team Lead <em>· BRACU Mongol-Tori (Mars Rover Team)</em></h3>
+            <p>Led a 30+ member team building a Mars rover prototype. URC 2024 finalist (2nd in Asia, 21st globally);
+              the program reached 8th globally at URC 2025. Sampling-based planning (RRT, RRT*), IMU + GNSS fusion,
+              and a 6-DOF manipulator with an algebraic inverse-kinematics solver.</p>
           </div>
-		   </main>
-      <footer class="footer">
-    <div class="copyright">
-         
-            <span class="author" itemprop="copyrightHolder"><a href="https://vulcans-forge.github.io/">Al Mahir Ahmed (Vulcan758)</a></span>
-         
+        </li>
+        <li>
+          <div class="when">2021 – 2023</div>
+          <div>
+            <h3>Senior Control &amp; Electronics Engineer <em>· BRACU Mongol-Tori</em></h3>
+            <p>Built the rover's autonomous navigation stack from scratch for URC 2023 (16th globally, 2nd in Asia).
+              Teleoperation control loop for the arm, skid-steer control, and Artificial Potential Field collision avoidance.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2023 – 2024</div>
+          <div>
+            <h3>R&amp;D Engineer &amp; Instructor <em>· DIP Foundation</em></h3>
+            <p>Developed robotics curriculum and projects from children's to university level.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2022</div>
+          <div>
+            <h3>Algorithm Engineer <em>· Now in Orbit, KIBO Robotics Programming Challenge</em></h3>
+            <p>RRT path planning for NASA/JAXA's Astrobee in a simulated ISS environment. 2nd runners-up nationally.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2021</div>
+          <div>
+            <h3>Instructor <em>· RoboLab</em></h3>
+            <p>Taught Arduino programming and electronics to students aged 9–16.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-    </div>
-</footer>
+    <section id="projects" class="wrap section">
+      <h2><span class="num">03</span>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="tag">Motion planning · Thesis</div>
+          <h3>Accelerated RRT</h3>
+          <p>A sampling-based planner combining direct informed sampling, asymmetric bidirectional trees and goal
+            biasing to find a high-quality first path fast. Benchmarked against RRT-Connect, Informed RRT*, BIT* and ABIT*;
+            being integrated on the physical rover.</p>
+          <div class="chips"><span>Python</span><span>C++</span><span>RRT*</span><span>BIT*</span></div>
+        </article>
+        <article class="card">
+          <div class="tag">SLAM · In progress</div>
+          <h3>ORB-SLAM3 Python bindings</h3>
+          <p>Python bindings for ORB-SLAM3 with working inertial and non-inertial modes and exposed tracking state,
+            built to be wrapped by ROS 2 nodes for GNSS-denied navigation.</p>
+          <div class="chips"><span>C++</span><span>pybind</span><span>ROS 2</span><span>VIO</span></div>
+        </article>
+        <article class="card">
+          <div class="tag">Racing · ICRA 2026</div>
+          <h3>Optimistic Follow-The-Gap</h3>
+          <p>A reactive 2D-LiDAR-only racer that prioritizes gap depth over width. 50+ laps with zero collisions;
+            14th globally in the final round of the ICRA 2026 Sim Racing League.</p>
+          <div class="chips"><span>LiDAR</span><span>AutoDrive Sim</span><span>Python</span></div>
+          <a class="link" href="https://github.com/Vulcan758/AutoDriveOptimisticFTG">GitHub →</a>
+        </article>
+        <article class="card">
+          <div class="tag">Embedded · ROS 2</div>
+          <h3>microROS differential-drive robot</h3>
+          <p>An ESP32 platform running ESP-IDF and microROS, built as a base for Nav2 and swarm experiments.</p>
+          <div class="chips"><span>ESP-IDF</span><span>microROS</span><span>Nav2</span></div>
+          <a class="link" href="https://github.com/Vulcan758/differential-drive-microROS-ESP32-robot">GitHub →</a>
+        </article>
+        <article class="card">
+          <div class="tag">Hardware · Internship</div>
+          <h3>Low-cost precise DC motor controller</h3>
+          <p>A brushed-DC motor controller on ESP32-S3 with a BTS7960 driver, AS5600 magnetic encoder and CAN bus.
+            Full internship report available.</p>
+          <div class="chips"><span>ESP32-S3</span><span>CAN</span><span>Control</span></div>
+          <a class="link" href="https://github.com/Vulcan758/dc-motor-controller-report">Report →</a>
+        </article>
+        <article class="card">
+          <div class="tag">PCB design</div>
+          <h3>"Saucey" flight controller &amp; boards</h3>
+          <p>An ESP32-S3 flight controller PCB, plus a 4-layer swerve-drive board (MPU9250, 4× TB6612FNG, microROS)
+            and other KiCAD designs.</p>
+          <div class="chips"><span>KiCAD</span><span>ESP32-S3</span><span>4-layer</span></div>
+          <a class="link" href="https://github.com/Vulcan758/Saucey-Flight-Controller-PCB">GitHub →</a>
+        </article>
+        <article class="card">
+          <div class="tag">Learning in public</div>
+          <h3>Path-planning notebooks</h3>
+          <p>Sampling-based planners implemented from their original papers, written to understand
+            how each one really works.</p>
+          <div class="chips"><span>Jupyter</span><span>RRT family</span></div>
+          <a class="link" href="https://github.com/Vulcan758/Path-Planning-Notebooks">GitHub →</a>
+        </article>
+      </div>
+    </section>
 
+    <section id="research" class="wrap section">
+      <h2><span class="num">04</span>Research &amp; Awards</h2>
+      <div class="pub">
+        <p><strong>A. M. Ahmed</strong> and K. Rhaman (2026). “Accelerated RRT: Sampling-based planning via Direct Informed
+          Sampling, Asymmetric Bidirectional Trees and Goal Biasing to Obtain High Quality Initial Path in Minimal Time.”
+          International Conference on Space Robotics (ISpaRo). <span class="badge">Under review</span></p>
+      </div>
+      <ul class="awards">
+        <li><b>Winner</b> — Bangladesh ICT and Innovation Awards (Student-Industrial)</li>
+        <li><b>8th globally</b> — University Rover Challenge 2025</li>
+        <li><b>2nd in Asia</b> — URC 2024 (21st globally) and URC 2023 (16th globally)</li>
+        <li><b>14th globally</b> — ICRA 2026 Sim Racing League, final round</li>
+        <li><b>2nd place (National)</b> — BUET CSE Fest 2023</li>
+        <li><b>2nd runners-up (National)</b> — KIBO Robotics Programming Challenge 2022</li>
+        <li><b>Champion (National)</b> — AUST Rover Challenge 2022</li>
+        <li><b>1st runners-up (National)</b> — BRACU Odommo '50 Techfest Hackathon 2022</li>
+      </ul>
+    </section>
 
+    <section id="contact" class="wrap section contact">
+      <h2><span class="num">05</span>Contact</h2>
+      <p>Hiring for autonomy, navigation or robotics software? I'd like to hear about it.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:mahirgored@gmail.com">mahirgored@gmail.com</a>
+        <a class="btn" href="https://github.com/Vulcan758">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/al-mahir-ahmed">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
+  <footer class="wrap footer">© 2026 Al Mahir Ahmed · Toronto, Canada</footer>
 
-
-
-
-
-
-
-
-    
-    <script src="/js/vendor_main.min.js" async=""></script>
-
-
-
-
-
-
-
-     </div>
-  </body>
+  <script src="rrt.js"></script>
+</body>
 </html>
